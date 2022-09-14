@@ -1,4 +1,4 @@
-SRCS = Zombie.Class.hpp Zombie.Class.cpp newZombie.cpp randomChump.cpp main.cpp
+SRCS = Zombie.Class.hpp Zombie.Class.cpp zombieHorde.cpp main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -6,7 +6,7 @@ CC = clang++
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
-NAME = braiiiiiiinnnzzz
+NAME = moar_brainz
 
 all: $(NAME)
 

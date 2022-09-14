@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.Class.cpp                                   :+:      :+:    :+:   */
+/*   Zombie.Class.hpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/14 17:21:50 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/09/14 17:27:34 by vsimeono         ###   ########.fr       */
+/*   Created: 2022/09/14 17:44:19 by vsimeono          #+#    #+#             */
+/*   Updated: 2022/09/14 18:18:40 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.Class.hpp"
+#ifndef ZOMBIE_CLASS_HPP
+#define ZOMBIE_CLASS_HPP
 
-/* The Constructior is already Defined and Declared in the Header File */
-// Zombie::Zombie(void)
-// {
-// 	// So the Compiler Does Not Complain
-// }
+#include <iostream>
 
-Zombie::~Zombie(void)
+
+class Zombie
 {
-	// So the Compiler Does Not Complain
-}
+	private:
+		std::string	_name;
+	
+	public:
+		Zombie(std::string name);
+		~Zombie(void);
+		void	announce(std::string name);
+		void	create_name(std::string input);
+};
+		Zombie* zombieHorde(int N, std::string name);
+		Zombie*	newZombie(std::string name);
 
-void	Zombie::announce(void)
-{
-	// newZombie(this->name);
-	std::cout << " Zombie " << this->_name << " BraiiiiiiinnnzzzZ..." << std::endl;
-}
+#endif

@@ -5,26 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/14 17:21:50 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/09/14 17:27:34 by vsimeono         ###   ########.fr       */
+/*   Created: 2022/09/14 17:44:57 by vsimeono          #+#    #+#             */
+/*   Updated: 2022/09/14 18:01:23 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.Class.hpp"
 
-/* The Constructior is already Defined and Declared in the Header File */
-// Zombie::Zombie(void)
-// {
-// 	// So the Compiler Does Not Complain
-// }
+/* Declaring in Canonical Form, and "_name(name)" is an Initialization List
+   which means that the Varible _name will Store what is Inside name */  
+Zombie::Zombie(std::string name): _name(name) 
+{
+	// So the Compiler Does Not Complain
+}
 
 Zombie::~Zombie(void)
 {
 	// So the Compiler Does Not Complain
 }
 
-void	Zombie::announce(void)
+void	announce(std:string name)
 {
-	// newZombie(this->name);
-	std::cout << " Zombie " << this->_name << " BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << "Zombie" << this->_name << "Brainz" << std::endl;
+}
+
+void	Zombie::create_name(std::string input)
+{
+	_name = input;
 }
