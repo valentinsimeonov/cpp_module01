@@ -6,7 +6,7 @@
 /*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 18:03:57 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/09/14 18:13:00 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/09/14 19:33:05 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ Zombie *zombieHorde(int N, std::string name)
 		horde[i].create_name(name);
 		i++;
 	}
-	return (name);
+	return (horde);
 }

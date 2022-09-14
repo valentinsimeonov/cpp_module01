@@ -6,7 +6,7 @@
 /*   By: vsimeono <vsimeono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:44:19 by vsimeono          #+#    #+#             */
-/*   Updated: 2022/09/14 18:18:40 by vsimeono         ###   ########.fr       */
+/*   Updated: 2022/09/14 19:31:43 by vsimeono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Zombie
 		std::string	_name;
 	
 	public:
-		Zombie(std::string name);
+		Zombie(void);
 		~Zombie(void);
 		void	announce(std::string name);
 		void	create_name(std::string input);
