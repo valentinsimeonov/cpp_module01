@@ -1,20 +1,20 @@
-SRCS = Zombie.Class.hpp Zombie.Class.cpp newZombie.cpp randomChump.cpp main.cpp
-
-OBJS = $(SRCS:.cpp=.o)
-
-CC = clang++
-RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
-
 NAME = braiiiiiiinnnzzz
+
+CC = c++
+
+FLAGS = -Werror -Wall -Wextra -std=c++98 -g
+
+SRC = Zombie.Class.hpp Zombie.Class.cpp newZombie.cpp randomChump.cpp main.cpp
+
+RM = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(SRCS) -o $(NAME)
+$(NAME):
+	@$(CC) $(FLAGS) $(SRC) -o $@
 
 clean:
-	$(RM) $(OBJS)
+	@$(RM) $(NAME)
 
 fclean: clean
 	$(RM) $(NAME)

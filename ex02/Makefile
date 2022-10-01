@@ -1,20 +1,20 @@
-SRCS = main.cpp
-
-OBJS = $(SRCS:.cpp=.o)
-
-CC = clang++
-RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
-
 NAME = hi_this_is_brain
+
+CC = c++
+
+FLAGS = -Werror -Wall -Wextra -std=c++98 -g
+
+SRC = main.cpp
+
+RM = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(SRCS) -o $(NAME)
+$(NAME):
+	@$(CC) $(FLAGS) $(SRC) -o $@
 
 clean:
-	$(RM) $(OBJS)
+	@$(RM) $(NAME)
 
 fclean: clean
 	$(RM) $(NAME)

@@ -1,10 +1,10 @@
-NAME = unnecessary_violence
+NAME = harl
 
 CC = c++
 
-FLAGS = -Werror -Wall -Wextra -std=c++98 -g
+FLAGS = -Werror -Wall -Wextra -std=c++98
 
-SRC = main.cpp Weapon.Class.cpp HumanA.Class.cpp HumanB.Class.cpp
+SRC = main.cpp harl.cpp
 
 RM = rm -f
 

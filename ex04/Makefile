@@ -1,10 +1,10 @@
-NAME = moar_brainz
+NAME = sed
 
 CC = c++
 
-FLAGS = -Werror -Wall -Wextra -std=c++98 -g
+FLAGS = -Werror -Wall -Wextra -std=c++98
 
-SRC = Zombie.Class.cpp zombieHorde.cpp main.cpp
+SRC = main.cpp
 
 RM = rm -f
 
